@@ -1,8 +1,16 @@
-/* For project --- */
+/* For project CoinCollector */
 
 body{
 	font-family: verdana, arial, sans-serif;
 	font-size: 100%;
 	color: #000;
 	background-color: #FFF;
+}
+
+.coin{
+	display: inline-block;
+	max-width: 100%;
+	margin: 2%;
+	padding: 0;
+	border: 1px solid blue;
 }

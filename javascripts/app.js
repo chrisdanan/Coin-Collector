@@ -3,6 +3,7 @@ var main = function(){
 
 	console.log("Hello Vane");
 
+	/*
 	var coin = $("#coin");
 	var i = 1;
 
@@ -16,6 +17,9 @@ var main = function(){
 		}
 
 	}, 100);
+	*/
+
+	
 };
 
 $(document).ready(main);

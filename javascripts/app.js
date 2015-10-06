@@ -13,12 +13,18 @@ var main = function(){
 			var coinSound = new Audio("assets/smw_coin.wav");
 
 			coinSound.play();
-			coin.hide();
+			//coin.hide();
+			coin.removeClass("coin");								//Hide coin.
+			coin.addClass("coin-collected");						//Show coin-collected animation.
 
-			//After about 3 seconds, show the coin again.
 			window.setTimeout(function(){
-				coin.show();
-			}, 3333);
+				coin.removeClass("coin-collected");					//Remove coin-collected animation.
+
+				window.setTimeout(function(){
+					//coin.show();
+					coin.addClass("coin");							//After about 3 seconds, show the coin again.
+				}, 7000);
+			},300);
 		}, 0);
 	});
 };

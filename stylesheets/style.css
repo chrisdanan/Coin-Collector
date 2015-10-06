@@ -9,9 +9,18 @@ body{
 	background-color: #242442;
 }
 
-h1{
-	text-align: center;
+header h1, header h2, header h2 div{
+	display: inline-block;
 	color: #fdff00;
+}
+
+header h1{
+	width: 60%;
+	text-align: center;
+}
+
+header h2{
+	width: 35%;
 }
 
 .coin-table{

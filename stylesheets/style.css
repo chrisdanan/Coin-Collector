@@ -40,3 +40,10 @@ h1{
 .coin:hover{
 	cursor: pointer;
 }
+
+footer{
+	margin-top: 20px;
+	border-top: 1px solid black;
+	text-align: center;
+	color: #949494;
+}

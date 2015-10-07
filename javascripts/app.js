@@ -9,10 +9,15 @@ var main = function(){
 	$(".num-coins").text(coinsCollected);		//Initialize coin counter to 0.
 
 	//Trigger mouse collision with coin.
-	$(".coin").mouseenter(function(){
-		var coin = $(this);
+	$(".coin").on("mouseenter", function(){
+		var coin = $(this),											//Reference to the coin that is collected.
+			coinContainer = coin.parent();							//Reference to the container that the coin was held in (i.e. the parent <div>).
 
-		coin.removeClass("coin");									//Hide coin.
+		coin.detach();												//Remove the coin from the DOM tree, but keep a record of its information so that it
+																	// can be reattached at a later time. This removes the bug of mouseenter() where the player
+																	// was able to collect the same coin multiple times, even after it vanished.
+
+		coin.removeClass("coin");									//Hide coin from grid counter.
 
 		coinsCollected++;											//Increase coin counter by 1.
 		$(".num-coins").text(coinsCollected);						//Update coin counter.
@@ -33,6 +38,7 @@ var main = function(){
 			coinSound.play();
 
 			window.setTimeout(function(){
+				coinContainer.append(coin);							//Add the coin back into its container.
 				coin.removeClass("coin-collected");					//Remove coin-collected animation.
 
 				window.setTimeout(function(){

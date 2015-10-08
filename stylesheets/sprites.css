@@ -53,6 +53,13 @@
 	animation: play .3s steps(6) infinite;
 }
 
+.vane{
+	width: 50px;
+	height: 50px;
+	background: url("../assets/vaneSprite.png") left center;
+	animation: play .5s steps(2) infinite;
+}
+
 @keyframes play{
 	100% {background-position: -300px;}
 }

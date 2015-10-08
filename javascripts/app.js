@@ -198,6 +198,14 @@ var main = function(){
 
 			if(gridCount === 0){									//If player collected all coins on the grid, then show Easter egg.
 				console.log("you collected them all!");
+				$("#commentary").hide();
+				$("#easter-egg").show();
+
+				window.setTimeout(function(){
+					$("#easter-egg").hide();
+					$("#commentary").show();
+				}, 3000);
+	
 			}
 
 			coinSound.play();
@@ -207,12 +215,12 @@ var main = function(){
 				coinContainer.append(coin);							//Add the coin back into its container.
 
 				window.setTimeout(function(){
-					coin.addClass("coin");							//After 7 seconds, show the coin again.
+					coin.addClass("coin");							//After 8 seconds, show the coin again.
 																	//7 seconds gives the player enough time to collect all coins, but
 																	// is short enough to make it challenging.
 
 					gridCount = $(".coin").length;					//Update number of coins left on grid (i.e. increase count).
-				}, 7000);
+				}, 8000);
 			},300);
 		}, 0);
 	});

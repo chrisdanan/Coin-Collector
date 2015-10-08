@@ -64,6 +64,17 @@ header h2{
 	cursor: pointer;
 }
 
+#easter-egg{
+	display: none;
+	margin: auto;
+	color: #fdff00;
+	text-align: center;
+}
+
+.vanechu{
+	margin: auto;
+}
+
 footer{
 	margin-top: 20px;
 	padding: 5px;

@@ -31,6 +31,12 @@ header h2{
 	width: 35%;
 }
 
+#commentary{
+	margin: 0;
+	text-align: center;
+	color: #fdff00;
+}
+
 .coin-table{
 	display: table;
 	margin: auto;

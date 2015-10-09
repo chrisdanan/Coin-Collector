@@ -153,8 +153,11 @@ var commentary = function(coinCount){
 		case 1400:
 			$("#commentary").text("");
 			break;
-		case 10000:
-			$("#commentary").text("Ahh, home at la- WHAT THE F***");
+		case 5000:
+			$("#commentary").text("Ahh, home at la- WHAT THE FLAB?!");
+			break;
+		case 5025:
+			$("#commentary").text("GET OUT OF MY HOME!!!");
 			break;
 		default:
 			break;

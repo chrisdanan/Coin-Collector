@@ -223,7 +223,7 @@ var main = function(){
 																	// is short enough to make it challenging.
 
 					gridCount = $(".coin").length;					//Update number of coins left on grid (i.e. increase count).
-				}, 80000);
+				}, 10000);
 			},300);
 		}, 0);
 	});

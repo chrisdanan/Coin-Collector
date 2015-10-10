@@ -44,20 +44,21 @@ header h2{
 }
 
 .coin-row{
-	display: table-row;
+	width: 100%;
+	text-align: center;
 }
 
 .coin-container{
+	display: inline-block;
 	width: 50px;
 	height: 50px;
-	display: table-cell;
+	margin: 3px;
+	-moz-margin: 0px;
 }
 
 .coin{
-	margin: 1%;
-	padding: 0;
-	max-width: 100%;
-	width: 10%;
+	width: 100%;
+	height: 100%;
 }
 
 .coin:hover{
